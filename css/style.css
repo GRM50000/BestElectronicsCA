@@ -1,0 +1,191 @@
+html {
+    font-family: Futura, Arial, sans-serif;
+}
+
+body {
+    background-color: yellow;
+}
+
+#Header {
+    position: fixed;
+    top: 0px;
+    width: 100vw;
+    height: 120px;
+    background-color: darkblue;
+    margin: auto;
+}
+
+#BannerSmall {
+    position: relative;
+    width: 100%;
+    z-index: 5;
+    height: 100%;
+}
+
+nav {
+    position: sticky;
+    top: 120px;
+    padding: 10px;
+    background-color: black;
+    text-align: center;
+}
+
+ul li {
+    display: inline;
+    margin: 20px;
+    list-style: none;
+}
+
+nav a:link {
+    color: red;
+}
+
+nav a:visited {
+    color: purple;
+}
+
+nav a:hover {
+    color: blue;
+}
+
+nav a:active {
+    color: white;
+}
+
+a:link {
+    text-decoration: none;
+}
+
+#TopBlurb {
+    position: relative;
+    top: 133px;
+    z-index: 1;
+    color: purple;
+    width: 80%;
+    margin: auto;
+    text-align: center;
+}
+
+#HomeArticles {
+    color: white;
+}
+
+#HomeArticleImg1 {
+    float: left;
+    position: relative;
+    top: 25px;
+    left: 25px;
+    border-radius: 10px;
+}
+
+#HomeArticle1 {
+    max-width: 80%;
+    min-width: 75%;
+    margin: auto;
+    position: relative;
+    top: 150px;
+    height: 150px;
+    background-color: black;
+    border-radius: 20px;
+}
+
+#HomeArticle1 p {
+    width: 85%;
+    position: relative;
+    left: 50px;
+    top: 20%;
+    bottom: 20%;
+}
+
+#HomeArticleImg2 {
+    float: right;
+    position: relative;
+    top: -70px;
+    right: 25px;
+    border-radius: 10px;
+}
+
+#HomeArticle2 {
+    max-width: 80%;
+    min-width: 75%;
+    margin: auto;
+    position: relative;
+    align-items: center;
+    top: 180px;
+    height: 150px;
+    background-color: black;
+    border-radius: 20px;
+}
+
+#HomeArticle2 p {
+    width: 75%;
+    position: relative;
+    left: 20px;
+    top: 26%;
+    bottom: 26%;
+}
+
+
+footer {
+    font-family: Futura, Arial, sans-serif;
+    color: white;
+    position: fixed;
+    bottom: 0px;
+    padding: 5px;
+    width: 100vw;
+    background-color: darkblue;
+    height: 160px;
+}
+
+#FooterImages {
+    background-color: darkblue;
+    width: 300px;
+    padding: 1px;
+    margin: auto;
+    /* Position element */
+    position: absolute;
+    right: 10px;
+    bottom: 10px;
+}
+
+#Address {
+    position: relative;
+    top: -10px;
+    background-color: black;
+    font-family: monospace;
+    font-size: 15px;
+    font-family: Futura, Arial, sans-serif;
+    color: white;
+    display: inline;
+    text-align: center;
+}
+
+#dates {
+    position: fixed;
+    color: white;
+    bottom: 10px;
+    left: 10px;
+    font-family: monospace;
+    font-size: 10px;
+}
+
+#dates a:link {
+    color: white;
+}
+
+#dates a:hover {
+    color: yellow;
+}
+
+/*medium screen 730*/
+@media screen and (min-width: 730px) {
+    header {
+        background-image: url("/images/BannerMedium.png");
+        align-items: center;
+    }
+
+    article:first-of-type {
+        border-bottom: 3px solid red;
+    }
+
+}
