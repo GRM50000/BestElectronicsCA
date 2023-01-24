@@ -3,10 +3,11 @@ html {
 }
 
 body {
-    background-color: yellow;
+    background-color: lightgray;
 }
 
 #Header {
+    background-image: url("/images/BannerSmall.png");
     position: fixed;
     top: 0px;
     width: 100vw;
@@ -41,7 +42,7 @@ nav a:link {
 }
 
 nav a:visited {
-    color: purple;
+    color: yellow;
 }
 
 nav a:hover {
@@ -54,6 +55,10 @@ nav a:active {
 
 a:link {
     text-decoration: none;
+}
+
+a:visited {
+    color: yellow;
 }
 
 #TopBlurb {
@@ -79,8 +84,7 @@ a:link {
 }
 
 #HomeArticle1 {
-    max-width: 80%;
-    min-width: 75%;
+    width: 75%;
     margin: auto;
     position: relative;
     top: 150px;
@@ -98,19 +102,17 @@ a:link {
 }
 
 #HomeArticleImg2 {
-    float: right;
+    float: left;
     position: relative;
-    top: -70px;
-    right: 25px;
+    top: 25px;
+    left: 25px;
     border-radius: 10px;
 }
 
 #HomeArticle2 {
-    max-width: 80%;
-    min-width: 75%;
+    width: 75%;
     margin: auto;
     position: relative;
-    align-items: center;
     top: 180px;
     height: 150px;
     background-color: black;
@@ -118,46 +120,76 @@ a:link {
 }
 
 #HomeArticle2 p {
-    width: 75%;
+    float: left;
+    width: 70%;
     position: relative;
-    left: 20px;
-    top: 26%;
-    bottom: 26%;
+    left: 50px;
+    top: 20%;
+    bottom: 20%;
+}
+
+/*article3 css start */
+#HomeArticleImg3 {
+    float: left;
+    position: relative;
+    top: 25px;
+    left: 25px;
+    border-radius: 10px;
+}
+
+#HomeArticle3 {
+    width: 75%;
+    margin: auto;
+    position: relative;
+    top: 220px;
+    height: 150px;
+    background-color: black;
+    border-radius: 20px;
+}
+
+#HomeArticle3 p {
+    float: left;
+    width: 70%;
+    position: relative;
+    left: 50px;
+    top: 20%;
+    bottom: 20%;
 }
 
 
+/*article3 css end*/
 footer {
     font-family: Futura, Arial, sans-serif;
+    display: inline;
     color: white;
     position: fixed;
     bottom: 0px;
     padding: 5px;
     width: 100vw;
     background-color: darkblue;
-    height: 160px;
+    height: 100px;
 }
 
 #FooterImages {
-    background-color: darkblue;
     width: 300px;
     padding: 1px;
     margin: auto;
     /* Position element */
     position: absolute;
-    right: 10px;
+    right: 1%;
     bottom: 10px;
 }
 
 #Address {
     position: relative;
-    top: -10px;
-    background-color: black;
+    margin: auto;
+    left: 1px;
+    top: 1px;
+    background-color: #229;
     font-family: monospace;
-    font-size: 15px;
+    font-size: 10px;
     font-family: Futura, Arial, sans-serif;
     color: white;
-    display: inline;
-    text-align: center;
 }
 
 #dates {
@@ -174,18 +206,34 @@ footer {
 }
 
 #dates a:hover {
-    color: yellow;
+    color: red;
 }
 
-/*medium screen 730*/
-@media screen and (min-width: 730px) {
-    header {
+/*medium screen 768*/
+@media screen and (min-width: 768px) {
+    #Header {
         background-image: url("/images/BannerMedium.png");
-        align-items: center;
     }
 
-    article:first-of-type {
-        border-bottom: 3px solid red;
+    body {
+        background-color: aqua;
     }
 
+    #TopBlurb {
+        color: black;
+    }
+}
+
+@media screen and (min-width: 1280px) {
+    #Header {
+        background-image: url("/images/BannerBig.png");
+    }
+
+    body {
+        background-color: red;
+    }
+
+    #TopBlurb {
+        color: white;
+    }
 }
